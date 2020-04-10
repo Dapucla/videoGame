@@ -1,0 +1,69 @@
+.contact {
+   @include container;
+   text-align: center;
+   padding: 5em 0;
+
+   h1 {
+      text-align: center;
+   }
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+
+   @supports(display: grid) {
+      display: grid;
+      grid-template-areas:
+         "name"
+         "email"
+         "message"
+         "button";
+
+      .name {
+         grid-area: name;
+      }
+
+      .email {
+         grid-area: email;
+      }
+
+      .message {
+         grid-area: message;
+      }
+
+      .button {
+         grid-area: message;
+      }
+
+   }
+}
+
+
+label {
+   display: block;
+   margin-top: 1em;
+   color: $dark-gray
+}
+
+input,
+textarea {
+   box-sizing: border-box;
+   display: block;
+   padding: .75rem;
+   width: 100%;
+   background: lighten($light-gray, 5%);
+   border: 1px solid $light-gray;
+   font-size: 1.2rem;
+}
+
+.button {
+   display: inline-block;
+   width: auto;
+   margin-top: 1em;
+   margin-left: auto;
+   background: $accent;
+   border: none;
+   @include sans-serif($fs: 2.5rem, $color: $white);
+   padding: .5em 1.5em;
+}
