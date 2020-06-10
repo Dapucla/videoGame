@@ -1,0 +1,66 @@
+.container__button {
+  position: relative;
+  left: 50%;
+  margin-top: 80px;
+  transform: translate(-50%, -50%);
+  padding-left: 44%;
+  border-radius: 20px;
+}
+
+.btn-gr {
+  display: block;
+  height: 80px;
+  width: 220px;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  color: black;
+  font-size: 3.2rem;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.container__button:hover {
+  color: #fcbf1e;
+
+}
+
+.btn-gr:hover {
+  background: black;
+  color: #fcbf1e;
+
+}
+
+.btn-gr span:hover {
+  color: #fcbf1e;
+
+}
+
+.btn-gr span:after {
+  color: #fcbf1e;
+
+}
+
+
+.btn-gr:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background: #fcbf1e;
+  height: 80px;
+  width: 372px;
+  z-index: -1;
+  transform: translateX(-280px);
+  transition: transform 400ms ease-in;
+}
+
+.btn-gr span {
+  font-family: 'Piedra',
+    cursive;
+  color: black;
+  position: relative;
+  top: 11px;
+  left: 10px;
+}

@@ -1,0 +1,284 @@
+@import 'input.css';
+@import 'button.css';
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+}
+
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none;
+}
+
+.try25 {
+  display: none;
+}
+
+.hide__circle {
+  visibility: hidden;
+}
+
+.hide-image {
+  display: none !important;
+}
+
+.container {
+  background-image: url('https://images.unsplash.com/photo-1514907283155-ea5f4094c70c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80');
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+}
+
+.container .container__title {
+  padding-top: 12%;
+  position: relative;
+  font-size: 10rem;
+  text-align: center;
+  font-family: 'Piedra',
+    cursive;
+  background: #fcbf1e;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.game {
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1583212292454-1fe6229603b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80');
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+}
+
+.game__user {
+  font-family: 'Piedra',
+    cursive;
+  font-style: normal;
+  color: #fcbf1e;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.game__fields {
+  font-family: 'Piedra',
+    cursive;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.game__fields>.game__time {
+  display: block;
+  position: relative;
+  width: 10%;
+  height: 3rem;
+  color: #fcbf1e;
+  text-align: center;
+  text-align: center;
+}
+
+.game__fields .game__timing {
+  background: transparent;
+  position: relative;
+  width: 18%;
+  height: 15rem;
+  color: #fcbf1e;
+  text-align: center;
+}
+
+.game__fields .game__field {
+  overflow: hidden;
+
+  position: relative;
+  width: 63%;
+  height: 45rem;
+}
+
+.game__fields .game__user_points {
+  color: #fcbf1e;
+  text-align: center;
+  position: relative;
+  width: 18%;
+  height: 15rem;
+}
+
+.gameover {
+  font-size: 4rem;
+  text-align: center;
+  color: black;
+  background-color: #fcbf1e;
+  position: relative;
+  width: 60%;
+  height: 73vh;
+}
+
+.winner {
+  display: block;
+  font-size: 4rem;
+  text-align: center;
+  color: #000;
+  background-color: #fcbf1e;
+  position: relative;
+  width: 60%;
+  height: 73vh;
+}
+
+.game__circle1 {
+  text-align: center;
+  background-image: url('https://cdn.pixabay.com/photo/2014/03/24/13/49/trout-294469_1280.png');
+  background-size: 100px;
+  width: 100px;
+  height: 50px;
+  display: block;
+  transition: 0.5s linear;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.game__circle2 {
+  text-align: center;
+  background-image: url('https://cdn.pixabay.com/photo/2014/03/24/13/49/trout-294469_1280.png');
+  background-size: 100px;
+  width: 100px;
+  height: 50px;
+  display: block;
+  transition: 0.5s linear;
+  position: relative;
+  cursor: pointer;
+}
+
+.game__circle3 {
+  text-align: center;
+  background-image: url('https://cdn.pixabay.com/photo/2014/03/24/13/49/trout-294469_1280.png');
+  background-size: 100px;
+  width: 100px;
+  height: 50px;
+  display: block;
+  transition: 0.5s linear;
+  position: relative;
+  cursor: pointer;
+}
+
+.game__circle4 {
+  text-align: center;
+  background-image: url('https://cdn.pixabay.com/photo/2016/04/15/20/08/fish-1331812_1280.png');
+  background-size: 150px;
+  width: 150px;
+  height: 100px;
+  display: block;
+  transition: 0.5s linear;
+  position: relative;
+  cursor: pointer;
+}
+
+.game__circle5 {
+  text-align: center;
+  background-image: url('https://cdn.pixabay.com/photo/2016/04/15/20/08/fish-1331812_1280.png');
+  background-size: 150px;
+  width: 150px;
+  height: 100px;
+  display: block;
+  transition: 0.5s linear;
+  position: relative;
+  cursor: pointer;
+}
+
+.game__circle6 {
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  background-image: url('https://cdn.pixabay.com/photo/2016/04/15/20/08/fish-1331812_1280.png');
+  background-size: 150px;
+  width: 150px;
+  height: 100px;
+  display: block;
+  transition: 0.5s linear;
+  position: relative;
+  cursor: pointer;
+}
+
+.game__circle7 {
+  text-align: center;
+  background-image: url('https://cdn.pixabay.com/photo/2012/04/13/21/31/fish-33712_1280.png');
+  background-size: 300px;
+  width: 300px;
+  height: 150px;
+  display: block;
+  transition: 0.5s linear;
+  position: relative;
+  cursor: pointer;
+}
+
+.game__circle8 {
+  text-align: center;
+  background-image: url('https://cdn.pixabay.com/photo/2012/04/13/21/31/fish-33712_1280.png');
+  background-size: 300px;
+  width: 300px;
+  height: 150px;
+  display: block;
+  transition: 0.5s linear;
+  position: relative;
+  cursor: pointer;
+}
+
+.game__circle9 {
+  text-align: center;
+  background-image: url('https://cdn.pixabay.com/photo/2012/04/13/21/31/fish-33712_1280.png');
+  background-size: 300px;
+  width: 300px;
+  height: 150px;
+  display: block;
+  transition: 0.5s linear;
+  position: relative;
+  cursor: pointer;
+}
+
+.game__board {
+  position: absolute !important;
+  position: relative;
+  font-size: 3rem;
+  color: #fff;
+  top: 0;
+  color: #fff;
+  margin: 200px 40% 0 40%;
+}
+
+.try7,
+.try8,
+.try9,
+.try10,
+.try11,
+.try12,
+.try13,
+.try14,
+.try15,
+.try16,
+.try17,
+.try18,
+.try19,
+.try20,
+.try21,
+.try22 {
+  -webkit-user-select: none;
+  user-select: none;
+}
